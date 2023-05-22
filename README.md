@@ -9,9 +9,9 @@ du projet et des tests.
 Un tuto sur le sujet : https://www.youtube.com/watch?v=6V6G3RyxEMk
 Livrables
 - Un lien vers un repo Git contenant :
-o Vos projets de tests et code de production
-Enoncé
-1. Cas nominal
+Vos projets de tests et code de production
+# Enoncé
+## Cas nominal
 L’objectif est de développer une application console permettant gérer une liste
 de tâches simples.
 L’application doit permettre à l’utilisateur de réaliser les actions suivantes :
@@ -42,14 +42,14 @@ scanner), et lorsque l’on exécute les tests les entrées/sorties utilisateur 
 simulée et vérifiée en utilisant la librairie Moquito.
 Note : La classe TaskManager ne doit comporter aucunes interactions avec la
 console (println et scanner).
-2. Evolutions
+## Evolutions
 Maintenant que vous avez votre code et vos tests de base, vous aurez peut-être
 remarqué que notre application présente un défaut dans l’énoncé initial : il est
 possible d’ajouter deux tâches ayant le même identifiant.
 Corriger ce fonctionnement en interdisant l’ajout d’une tâche ayant un
 identifiant déjà existant dans la liste. Mettez à jour vos tests en fonction.
 Cela peut être le bon moment pour s’initier au TDD
-3. Bonus
+## Bonus
 Après avoir poussé votre projet dans un repo GitHub, configurer une intégration
 continue à l’aide de GitHub actions, afin de lancer une compilation de votre
 projet et le lancement des tests.
