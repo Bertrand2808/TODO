@@ -110,8 +110,9 @@ public class TaskManagerTest {
         taskManager.run();
         verify(userInterfaceMock, times(4)).printLine("Entrer une commande : add, done, remove, list, exit");
     }
-
-
+    /*
+    * Teste si la méthode addTask affiche bien une erreur si l'ID existe déjà
+    */
     @Test
     public void testAddTaskWithExistingId() {
         TaskList taskList = new TaskList();
@@ -123,6 +124,4 @@ public class TaskManagerTest {
         taskList.addTask(Long.valueOf("2"),"Tâche avec ID existant");
         assertEquals(2, taskList.getTasks().size()); // La taille de la liste des tâches n'a pas changé car l'ajout a été refusé
     }
-
-
 }
