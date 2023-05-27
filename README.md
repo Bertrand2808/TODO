@@ -25,21 +25,27 @@ suivants :
 - Un identifiant (entier)
 - Une description (chaîne)
 - Un état (booléen)
+
 Il faudra également développer une classe TaskList responsable de gérer la liste
 de tâches et ses tests unitaires/intégration associés.
+
 Enfin une classe TaskManager, qui sera le point d’entrée depuis la classe Main
 de votre application console.
+
 La classe TaskManager doit afficher un menu avec les différentes options citées
 ci-dessus, et ce tant que l’utilisateur n’a pas entré « exit ».
 Il faudra également implémenter des tests fonctionnels de l’application qui
 devront simuler des actions utilisateurs et valider toutes les fonctionnalités
 proposées par l’application.
+
 Attention, dans ce cas l’application console est considéré comme une interface
 graphique, donc cette couche est à contourner lors des tests.
+
 Il va donc falloir rendre votre code testable pour que lors de l’exécution normale
 de l’application on interagisse « pour de vrai » avec la console (println et
 scanner), et lorsque l’on exécute les tests les entrées/sorties utilisateur soit
 simulée et vérifiée en utilisant la librairie Moquito.
+
 Note : La classe TaskManager ne doit comporter aucunes interactions avec la
 console (println et scanner).
 ## Evolutions
